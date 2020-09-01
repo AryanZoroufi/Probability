@@ -1,0 +1,13 @@
+function side3 = thirdside(side1,side2)
+side3 = sqrt(side1^2 + side2^2 - 2*side1*side2*cos(deg2rad(angle)));
+end
+while side1<=0
+    side1 = input('\nEnter the first side: ');
+end
+while side2<=0
+    side2 = input('\nEnter the first side: ');
+end
+angle = input('\nEnter the angle between them: ');
+side3 = sqrt(side1^2 + side2^2 - 2*side1*side2*cos(deg2rad(angle)));
+result = ['The third side is ', num2str(side3)];
+disp(result);
